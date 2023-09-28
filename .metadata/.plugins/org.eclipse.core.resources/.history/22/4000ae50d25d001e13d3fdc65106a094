@@ -96,7 +96,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  // TODO
 	    switch (status)
 	    {
 	    case 0:
