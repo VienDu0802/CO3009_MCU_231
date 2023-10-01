@@ -190,31 +190,58 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  int sec = -1;
-  int min = 0;
-  int hou = 0;
+  int counter = 0;
+
   while (1)
   {
-    sec++;
-    if (sec >= 12)
+    switch (counter)
     {
-      sec = 0;
-      min++;
+    case 0:
+      HAL_GPIO_TogglePin(L0_GPIO_Port, L0_Pin);
+      break;
+    case 1:
+      HAL_GPIO_TogglePin(L1_GPIO_Port, L1_Pin);
+      break;
+    case 2:
+      HAL_GPIO_TogglePin(L2_GPIO_Port, L2_Pin);
+      break;
+    case 3:
+      HAL_GPIO_TogglePin(L3_GPIO_Port, L3_Pin);
+      break;
+    case 4:
+      HAL_GPIO_TogglePin(L4_GPIO_Port, L4_Pin);
+      break;
+    case 5:
+      HAL_GPIO_TogglePin(L5_GPIO_Port, L5_Pin);
+      break;
+    case 6:
+      HAL_GPIO_TogglePin(L6_GPIO_Port, L6_Pin);
+      break;
+    case 7:
+      HAL_GPIO_TogglePin(L7_GPIO_Port, L7_Pin);
+      break;
+    case 8:
+      HAL_GPIO_TogglePin(L8_GPIO_Port, L8_Pin);
+      break;
+    case 9:
+      HAL_GPIO_TogglePin(L9_GPIO_Port, L9_Pin);
+      break;
+    case 10:
+      HAL_GPIO_TogglePin(L10_GPIO_Port, L10_Pin);
+      break;
+    case 11:
+      HAL_GPIO_TogglePin(L11_GPIO_Port, L11_Pin);
+      break;
+    default:
+      break;
     }
-    if (min >= 12)
-    {
-      min = 0;
-      hou = 0;
-    }
-    if (hou >= 12)
-    {
-      hou = 0;
-    }
-    clearAllClock();
-    setNumberOnBlock(sec);
-    setNumberOnBlock(min);
-    setNumberOnBlock(hou);
+
     HAL_Delay(1000);
+
+    if (counter >= 11)
+      counter = 0;
+    else
+      counter++;
   }
   /* USER CODE END 3 */
 }
