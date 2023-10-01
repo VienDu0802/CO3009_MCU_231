@@ -4548,11 +4548,6 @@
 2023-09-30 15:59:17,967 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2023-09-30 15:59:17,967 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2023-09-30 15:59:17,983 [INFO] OpenFileManager:333 - Restore cursor
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Ex9
 2023-09-30 16:27:41,399 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 720295312 Bytes (1073741824)
 2023-09-30 16:27:42,395 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 741863520 Bytes (1073741824)
 2023-09-30 16:27:44,325 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 870990024 Bytes (1073741824)
@@ -4589,11 +4584,5 @@
 2023-09-30 16:27:50,919 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2023-09-30 16:27:50,919 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2023-09-30 17:25:12,115 [INFO] Gpio:254 - dependency for GPIO []
-<<<<<<< HEAD
-=======
->>>>>>> 7a10f0e5e5b7872c4f3b85c88549d3954d679e28
->>>>>>> Ex9
 2023-09-30 19:35:36,068 [INFO] Activator:177 - 
-
-
 2023-09-30 19:35:36,068 [INFO] Activator:178 - !SESSION log4j initialized
