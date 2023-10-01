@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  000155b7  00000000  00000000  00024670  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000045b9  00000000  00000000  00039c27  2**0
+ 17 .debug_line   000045bb  00000000  00000000  00039c27  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00079942  00000000  00000000  0003e1e0  2**0
+ 18 .debug_str    00079947  00000000  00000000  0003e1e2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000b7b22  2**0
+ 19 .comment      00000053  00000000  00000000  000b7b29  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000d94  00000000  00000000  000b7b78  2**2
+ 20 .debug_frame  00000d94  00000000  00000000  000b7b7c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -321,7 +321,7 @@ int main(void)
   int min = 0;
  80002e4:	2300      	movs	r3, #0
  80002e6:	60bb      	str	r3, [r7, #8]
-  int hou = 0;
+  int hour = 0;
  80002e8:	2300      	movs	r3, #0
  80002ea:	607b      	str	r3, [r7, #4]
   while (1)
@@ -351,16 +351,16 @@ int main(void)
       min = 0;
  8000308:	2300      	movs	r3, #0
  800030a:	60bb      	str	r3, [r7, #8]
-      hou = 0;
+      hour = 0;
  800030c:	2300      	movs	r3, #0
  800030e:	607b      	str	r3, [r7, #4]
     }
-    if (hou >= 12)
+    if (hour >= 12)
  8000310:	687b      	ldr	r3, [r7, #4]
  8000312:	2b0b      	cmp	r3, #11
  8000314:	dd01      	ble.n	800031a <main+0x4e>
     {
-      hou = 0;
+      hour = 0;
  8000316:	2300      	movs	r3, #0
  8000318:	607b      	str	r3, [r7, #4]
     }
@@ -372,7 +372,7 @@ int main(void)
     setNumberOnBlock(min);
  8000324:	68b8      	ldr	r0, [r7, #8]
  8000326:	f7ff ff5b 	bl	80001e0 <setNumberOnBlock>
-    setNumberOnBlock(hou);
+    setNumberOnBlock(hour);
  800032a:	6878      	ldr	r0, [r7, #4]
  800032c:	f7ff ff58 	bl	80001e0 <setNumberOnBlock>
     HAL_Delay(1000);

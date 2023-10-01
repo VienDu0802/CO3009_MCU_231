@@ -213,7 +213,7 @@ int main(void)
     clearAllClock();
     setNumberOnBlock(sec);
     setNumberOnBlock(min);
-    setNumberOnBlock(hour);
+    setNumberOnBlock(hou);
     HAL_Delay(1000);
   }
   /* USER CODE END 3 */
