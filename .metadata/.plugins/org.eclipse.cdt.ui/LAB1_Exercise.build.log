@@ -1,4 +1,4 @@
-20:09:19 **** Build of configuration Debug for project LAB1_Exercise ****
+20:17:02 **** Incremental Build of configuration Debug for project LAB1_Exercise ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
 arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
@@ -31,12 +31,12 @@ arm-none-eabi-objcopy  -O binary  LAB1_Exercise.elf  "LAB1_Exercise.bin"
    4796	     20	   1572	   6388	   18f4	LAB1_Exercise.elf
 Finished building: default.size.stdout
  
-Finished building: LAB1_Exercise.bin
 Finished building: LAB1_Exercise.hex
- 
- 
+Finished building: LAB1_Exercise.bin
 Finished building: LAB1_Exercise.list
  
+ 
+ 
 
-20:09:22 Build Finished. 0 errors, 0 warnings. (took 2s.820ms)
+20:17:04 Build Finished. 0 errors, 0 warnings. (took 1s.951ms)
 
